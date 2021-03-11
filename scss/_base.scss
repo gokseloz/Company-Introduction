@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&family=Monoton&display=swap");
+
+// ----------
+// * FONTS *
+// ----------
+$bellota: 'Bellota Text', cursive;
+$monoton: 'Monoton', cursive;
+
+html {
+    box-sizing: border-box;
+    font-family: $bellota;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+$c-white: #fff;
+$c-black: #000;
+$c-gray : #888;
+$c-turquois: rgba(50, 231, 255, 0.8);
+$c-mustard: #f08e0f;
