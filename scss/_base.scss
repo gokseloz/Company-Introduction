@@ -19,10 +19,16 @@ html {
     padding: 0;
     outline: none;
     text-decoration: none;
+    list-style-type: none;
 }
 
 $c-white: #fff;
+$c-white-dark:#fffeee;
 $c-black: #000;
+$c-black-light:#222;
 $c-gray : #888;
+$c-light-gray:#eee;
 $c-turquois: rgba(50, 231, 255, 0.8);
 $c-mustard: #f08e0f;
+$c-olive: #796717;
+$c-cherry: rgb(253, 69, 69);

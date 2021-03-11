@@ -14,23 +14,23 @@
         align-items: center;
     }
 
-    &-rotating-bg{
+    &-rotating-bg {
         position: absolute;
         top: -65rem;
         width: 84rem;
         height: 84rem;
         border-radius: 45%;
-        background-color:$c-turquois;
+        background-color: $c-turquois;
         animation: rotate 30s linear infinite;
 
-        &::after{
+        &::after {
             content: "";
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color:rgba($c-gray, 0.1);
+            background-color: rgba($c-gray, 0.1);
             border-radius: 41%;
         }
     }
@@ -51,7 +51,7 @@
             text-align: center;
 
             &:hover {
-                width:5.5rem;
+                width: 5.5rem;
                 background-color: rgba($c-white, .2);
             }
         }
@@ -64,9 +64,9 @@
         font-family: $monoton;
         color: $c-white;
         text-align: center;
-        background-color:$c-white ;
+        background-color: $c-white;
         padding: .5rem .6rem;
-        text-shadow:0.2rem 0.2rem 0.2rem $c-gray;
+        text-shadow: 0.2rem 0.2rem 0.2rem $c-gray;
         letter-spacing: .1rem;
         opacity: .9;
         border-radius: .7rem;
@@ -76,24 +76,24 @@
         position: absolute;
         bottom: 5rem;
 
-        i{
+        i {
             font-size: 4rem;
-            color:$c-turquois;
+            color: $c-turquois;
         }
     }
 }
 
-.customers{
+.customers {
     position: relative;
 
-    &-wrapper{
+    &-wrapper {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    &-heading{
+    &-heading {
         font-size: 2.5rem;
         color: $c-gray;
         margin-top: 2rem;
@@ -101,12 +101,13 @@
         text-shadow: .3rem .3rem .3rem rgba($c-black, 0.1);
     }
 
-    &-testimonials{
+    &-testimonials {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        .customer{
+
+        .customer {
             width: 17rem;
             display: flex;
             flex-direction: column;
@@ -114,14 +115,14 @@
             margin: 2rem 1rem;
             padding: 1rem 1rem 2rem 1rem;
             background-color: rgba($c-gray, 0.1);
-            box-shadow: .5rem .5rem 1rem rgba($c-gray, .2), -.5rem -.5rem 1rem rgba($c-gray, .2) ;
+            box-shadow: .5rem .5rem 1rem rgba($c-gray, .2), -.5rem -.5rem 1rem rgba($c-gray, .2);
 
-            &-quote{
+            &-quote {
                 color: $c-mustard;
                 font-size: 1.8rem;
             }
 
-            &-review{
+            &-review {
                 font-size: .9rem;
                 text-align: justify;
                 text-indent: 1rem;
@@ -129,14 +130,15 @@
                 margin-bottom: 1rem;
             }
 
-            &-stars{
+            &-stars {
                 color: $c-mustard;
             }
 
-            &-img{
+            &-img {
                 margin-top: .8rem;
                 margin-bottom: .8rem;
-                img{
+
+                img {
                     width: 4.5rem;
                     height: 4.5rem;
                     border-radius: 50%;
@@ -144,8 +146,151 @@
                 }
             }
 
-            &-name{
-                font-size:1rem;
+            &-name {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.team {
+    position: relative;
+
+    &-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-heading {
+        font-size: 2.5rem;
+        color: $c-gray;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-shadow: .3rem .3rem .3rem rgba($c-black, 0.1);
+    }
+
+    &-members {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .member {
+            position: relative;
+            width: 17rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 2rem 1rem;
+            padding: .5rem;
+            background-color: $c-white-dark;
+            box-shadow: .5rem .5rem 1rem rgba($c-gray, .2), -.5rem -.5rem 1rem rgba($c-gray, .2);
+            opacity: .7;
+            transition: opacity .3s;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            &-img {
+                width: 100%;
+            }
+
+            &-name {
+                font-size: 1rem;
+                margin-top: 1rem;
+                color: $c-olive;
+
+                span {
+                    font-size: .8rem;
+                }
+            }
+
+            &-skills {
+                font-size: .8rem;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                margin-top: .5rem;
+                margin-bottom: .5rem;
+
+            }
+
+            &-projects {
+                font-size: .7rem;
+                letter-spacing: .1rem;
+                color: $c-white;
+                padding: .3rem .8rem;
+                background-color: $c-mustard;
+                border-radius: 2rem;
+            }
+
+            &-aboutMe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 1.2rem;
+                background-color: $c-cherry;
+                transition: transform 1s;
+                transform: scale(0);
+                transform-origin: top right;
+                border-radius: 15rem 0 15rem 15rem;
+                transition: transform .5s, border-radius .8s;
+                opacity: .9;
+
+                &.active {
+                    transform: scale(1);
+                    border-radius: 0;
+                }
+
+                h4 {
+                    font-size: 1.8rem;
+                    color: $c-white;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            &-story {
+                text-indent: 1rem;
+                color: $c-light-gray;
+                font-size: .9rem;
+                text-align: justify;
+            }
+
+            &-btn {
+                position: absolute;
+                right: -.5rem;
+                top: -.5rem;
+                border: none;
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                background-color: $c-black-light;
+
+                &.active::before{
+                    transform: rotate(90deg);
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 70%;
+                    height: .1rem;
+                    background-color: $c-white;
+                    transition: transform .5s;
+                    
+                }
             }
         }
     }

@@ -10,7 +10,8 @@ html {
   margin: 0;
   padding: 0;
   outline: none;
-  text-decoration: none; }
+  text-decoration: none;
+  list-style-type: none; }
 
 @keyframes rotate {
   0% {
@@ -128,3 +129,109 @@ html {
           object-fit: cover; }
       .customers-testimonials .customer-name {
         font-size: 1rem; }
+
+.team {
+  position: relative; }
+  .team-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .team-heading {
+    font-size: 2.5rem;
+    color: #888;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.1); }
+  .team-members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    .team-members .member {
+      position: relative;
+      width: 17rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 2rem 1rem;
+      padding: .5rem;
+      background-color: #fffeee;
+      box-shadow: 0.5rem 0.5rem 1rem rgba(136, 136, 136, 0.2), -0.5rem -0.5rem 1rem rgba(136, 136, 136, 0.2);
+      opacity: .7;
+      transition: opacity .3s; }
+      .team-members .member:hover {
+        opacity: 1; }
+      .team-members .member-img {
+        width: 100%; }
+      .team-members .member-name {
+        font-size: 1rem;
+        margin-top: 1rem;
+        color: #796717; }
+        .team-members .member-name span {
+          font-size: .8rem; }
+      .team-members .member-skills {
+        font-size: .8rem;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: .5rem;
+        margin-bottom: .5rem; }
+      .team-members .member-projects {
+        font-size: .7rem;
+        letter-spacing: .1rem;
+        color: #fff;
+        padding: .3rem .8rem;
+        background-color: #f08e0f;
+        border-radius: 2rem; }
+      .team-members .member-aboutMe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1.2rem;
+        background-color: #fd4545;
+        transition: transform 1s;
+        transform: scale(0);
+        transform-origin: top right;
+        border-radius: 15rem 0 15rem 15rem;
+        transition: transform .5s, border-radius .8s;
+        opacity: .9; }
+        .team-members .member-aboutMe.active {
+          transform: scale(1);
+          border-radius: 0; }
+        .team-members .member-aboutMe h4 {
+          font-size: 1.8rem;
+          color: #fff;
+          margin-bottom: 1rem; }
+      .team-members .member-story {
+        text-indent: 1rem;
+        color: #eee;
+        font-size: .9rem;
+        text-align: justify; }
+      .team-members .member-btn {
+        position: absolute;
+        right: -.5rem;
+        top: -.5rem;
+        border: none;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: #222; }
+        .team-members .member-btn.active::before {
+          transform: rotate(90deg); }
+        .team-members .member-btn::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 70%;
+          height: .1rem;
+          background-color: #fff;
+          transition: transform .5s; }
