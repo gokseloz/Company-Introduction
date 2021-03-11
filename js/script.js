@@ -1,9 +1,8 @@
-let memberBtn = document.querySelector(".member-btn")
-let memberStory = document.querySelector(".member-story")
-let memberAboutMe = document.querySelector(".member-aboutMe")
+let memberBtn = document.querySelectorAll(".member-btn")
 
-memberBtn.addEventListener("click", () => {
-    memberAboutMe.classList.toggle("active")
-    memberBtn.classList.toggle("active")
-
-})
+memberBtn.forEach(btn => {
+    btn.addEventListener("click", () => {
+        btn.classList.toggle("active")
+        btn.parentNode.children[4].classList.toggle("active") 
+    })
+});
