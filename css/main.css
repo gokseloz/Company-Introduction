@@ -144,7 +144,8 @@ html {
         font-size: 4.5rem; } }
     @media (min-width: 1350px) {
       .customers-heading {
-        font-size: 5.5rem; } }
+        font-size: 5.5rem;
+        margin-bottom: -1rem; } }
   .customers-testimonials {
     display: flex;
     justify-content: center;
@@ -272,7 +273,8 @@ html {
         font-size: 4.5rem; } }
     @media (min-width: 1350px) {
       .team-heading {
-        font-size: 5.5rem; } }
+        font-size: 5.5rem;
+        margin-bottom: -1rem; } }
   .team-members {
     display: flex;
     justify-content: center;
@@ -411,7 +413,7 @@ html {
       .contact-heading {
         font-size: 5.5rem; } }
   .contact-form-wrapper {
-    background-color: #e5e9ff;
+    background-color: transparent;
     border-radius: .5rem;
     display: flex;
     justify-content: center;
@@ -435,24 +437,27 @@ html {
         background-color: rgba(50, 231, 255, 0.8);
         transform: rotateY(30deg);
         box-shadow: -1rem 1rem 2rem #888;
-        transition: box-shadow .5s, transform .5s; } }
+        transition: box-shadow .5s, transform .5s;
+        border-radius: .5rem; } }
     .contact-img:hover {
       transform: translateY(-1rem) rotateY(30deg);
       box-shadow: -2rem 2rem 4rem #888; }
   .contact-form {
     width: 20rem;
     padding: 1.5rem;
-    box-shadow: 1rem 1rem 2rem #888;
+    box-shadow: 0.5rem 0.5rem 1rem #888;
     background-color: #fff;
     font-size: 1rem;
-    transition: box-shadow .5s, transform .5s; }
+    transition: box-shadow .5s, transform .5s;
+    border-radius: .5rem; }
     .contact-form:hover {
       transform: translateY(-1rem);
       box-shadow: 2rem 2rem 4rem #888; }
     @media (min-width: 650px) {
       .contact-form {
         width: 26rem;
-        font-size: 1.3rem; } }
+        font-size: 1.3rem;
+        box-shadow: 1rem 1rem 2rem #888; } }
     @media (min-width: 921px) {
       .contact-form {
         width: 30rem;
@@ -503,3 +508,34 @@ html {
       transition: background-color .5s; }
       .contact-form .form-btn:hover {
         background-color: #32e7ff; }
+    .contact-form .form-successText {
+      display: none;
+      position: absolute;
+      font-size: .7rem;
+      text-align: center;
+      bottom: .5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      color: green; }
+    .contact-form .form-warningText {
+      display: none;
+      position: absolute;
+      font-size: .7rem;
+      text-align: center;
+      bottom: .5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      color: red; }
+
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem; }
+  .footer-desc {
+    font-size: .8rem;
+    letter-spacing: .1rem;
+    color: #505050; }
