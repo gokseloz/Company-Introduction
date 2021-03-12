@@ -45,6 +45,25 @@ html {
       .scroll-up-btn i {
         font-size: 1rem; } }
 
+.section-heading {
+  font-size: 2.5rem;
+  color: #888;
+  margin-bottom: 2rem;
+  text-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.1); }
+  @media (min-width: 650px) {
+    .section-heading {
+      font-size: 4.5rem; } }
+  @media (min-width: 1350px) {
+    .section-heading {
+      font-size: 5.5rem; } }
+
+.section-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem; }
+
 .intro {
   position: relative;
   overflow: hidden;
@@ -71,7 +90,7 @@ html {
     height: 85rem;
     border-radius: 45%;
     background-color: rgba(50, 231, 255, 0.8);
-    animation: rotate 30s linear infinite; }
+    animation: rotate 30s infinite; }
     @media (min-width: 650px) {
       .intro-rotating-bg {
         top: -76rem;
@@ -161,24 +180,6 @@ html {
 
 .customers {
   position: relative; }
-  .customers-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem; }
-  .customers-heading {
-    font-size: 3rem;
-    color: #888;
-    margin-bottom: 2rem;
-    text-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.1); }
-    @media (min-width: 650px) {
-      .customers-heading {
-        font-size: 4.5rem; } }
-    @media (min-width: 1350px) {
-      .customers-heading {
-        font-size: 5.5rem;
-        margin-bottom: -1rem; } }
   .customers-testimonials {
     display: flex;
     justify-content: center;
@@ -290,24 +291,6 @@ html {
   @media (min-width: 1350px) {
     .team {
       margin-top: 4rem; } }
-  .team-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem; }
-  .team-heading {
-    font-size: 2.5rem;
-    color: #888;
-    margin-bottom: 2rem;
-    text-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.1); }
-    @media (min-width: 650px) {
-      .team-heading {
-        font-size: 4.5rem; } }
-    @media (min-width: 1350px) {
-      .team-heading {
-        font-size: 5.5rem;
-        margin-bottom: -1rem; } }
   .team-members {
     display: flex;
     justify-content: center;
@@ -428,23 +411,6 @@ html {
   @media (min-width: 1350px) {
     .contact {
       margin-top: 4rem; } }
-  .contact-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem; }
-  .contact-heading {
-    font-size: 2.5rem;
-    color: #888;
-    margin-bottom: 2rem;
-    text-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.1); }
-    @media (min-width: 650px) {
-      .contact-heading {
-        font-size: 4.5rem; } }
-    @media (min-width: 1350px) {
-      .contact-heading {
-        font-size: 5.5rem; } }
   .contact-form-wrapper {
     background-color: transparent;
     border-radius: .5rem;
