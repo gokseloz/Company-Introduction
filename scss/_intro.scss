@@ -5,7 +5,6 @@
     justify-content: center;
     font-size: 1rem;
 
-
     @media (min-width:650px) {
         font-size: 1.2rem;
     }
@@ -39,12 +38,12 @@
         }
 
         @media (min-width:950px) {
-            top: -90rem;
-            width: 120rem;
-            height: 120rem;
+            top: -105rem;
+            width: 130rem;
+            height: 130rem;
         }
 
-        @media (min-width:1350px) {
+        @media (min-width:1550px) {
             top: -150rem;
             width: 180rem;
             height: 180rem;
@@ -83,13 +82,12 @@
                 background-color: rgba($c-white, .2);
                 transition: width 1.5s;
 
-
                 @media (min-width:650px) {
                     width: 7rem;
                 }
 
                 @media (min-width:950px) {
-                    width: 10rem;
+                    width: 8rem;
                 }
             }
         }
@@ -116,11 +114,12 @@
         }
 
         @media (min-width:950px) {
-            top: 22rem;
+            top: 20rem;
             font-size: 3rem;
         }
 
-        @media (min-width:950px) {
+        @media (min-width:1550px) {
+            top: 23rem;
             font-size: 4rem;
         }
     }
@@ -130,8 +129,16 @@
         bottom: 8rem;
 
         i {
-            font-size: 4em;
+            font-size: 6rem;
             color: $c-turquois;
+
+            @media (min-width:950px) {
+                font-size: 8rem;
+            }
+
+            @media (min-width:1550px) {
+                font-size: 10rem;
+            }
         }
     }
 }

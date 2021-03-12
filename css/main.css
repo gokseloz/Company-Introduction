@@ -79,10 +79,10 @@ html {
         height: 100rem; } }
     @media (min-width: 950px) {
       .intro-rotating-bg {
-        top: -90rem;
-        width: 120rem;
-        height: 120rem; } }
-    @media (min-width: 1350px) {
+        top: -105rem;
+        width: 130rem;
+        height: 130rem; } }
+    @media (min-width: 1550px) {
       .intro-rotating-bg {
         top: -150rem;
         width: 180rem;
@@ -119,7 +119,7 @@ html {
             width: 7rem; } }
         @media (min-width: 950px) {
           .intro-nav-link:hover {
-            width: 10rem; } }
+            width: 8rem; } }
   .intro-heading {
     position: absolute;
     top: 16rem;
@@ -140,17 +140,24 @@ html {
         font-size: 2.4rem; } }
     @media (min-width: 950px) {
       .intro-heading {
-        top: 22rem;
+        top: 20rem;
         font-size: 3rem; } }
-    @media (min-width: 950px) {
+    @media (min-width: 1550px) {
       .intro-heading {
+        top: 23rem;
         font-size: 4rem; } }
   .intro-logo {
     position: absolute;
     bottom: 8rem; }
     .intro-logo i {
-      font-size: 4em;
+      font-size: 6rem;
       color: rgba(50, 231, 255, 0.8); }
+      @media (min-width: 950px) {
+        .intro-logo i {
+          font-size: 8rem; } }
+      @media (min-width: 1550px) {
+        .intro-logo i {
+          font-size: 10rem; } }
 
 .customers {
   position: relative; }
