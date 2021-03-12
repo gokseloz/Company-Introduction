@@ -9,6 +9,7 @@ $monoton: 'Monoton', cursive;
 html {
     box-sizing: border-box;
     font-family: $bellota;
+    scroll-behavior: smooth;
 }
 
 *,

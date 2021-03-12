@@ -10,16 +10,16 @@
 </head>
 
 <body>
-    <section class="intro">
+    <section class="intro" id="intro">
         <div class="intro-wrapper">
             <div class="intro-rotating-bg"></div>
             <nav class="intro-nav">
-                <a href="#" class="intro-nav-link">Design</a>
-                <a href="#" class="intro-nav-link">Customers</a>
-                <a href="#" class="intro-nav-link">Team</a>
-                <a href="#" class="intro-nav-link">Contact</a>
+                <a href="#" class="intro-nav-link" tabindex="0">Design</a>
+                <a href="#" class="intro-nav-link" tabindex="0">Customers</a>
+                <a href="#" class="intro-nav-link" tabindex="0">Team</a>
+                <a href="#" class="intro-nav-link" tabindex="0">Contact</a>
             </nav>
-            <h1 class="intro-heading">Creative Design</h1>
+            <h1 class="intro-heading" tabindex="0">LOTR Design</h1>
             <div class="intro-logo">
                 <i class="fas fa-bezier-curve"></i>
             </div>
@@ -27,7 +27,7 @@
     </section>
     <section class="customers">
         <div class="customers-wrapper">
-            <h2 class="customers-heading">CUSTOMERS</h2>
+            <h2 class="customers-heading" tabindex="0">CUSTOMERS</h2>
             <div class="customers-testimonials">
                 <div class="customer-card-wrapper">
                     <div class="customer">
@@ -35,13 +35,13 @@
                             <div class="customer-img">
                                 <img src="images/customer-img-1.png" alt="customer">
                             </div>
-                            <h3 class="customer-name">Eowyn</h3>
-                            <span class="customer-role">Shieldmaiden of Rohan</span>
-                            <button class="customer-btn">See the review</button>
+                            <h3 class="customer-name" tabindex="0">Eowyn</h3>
+                            <span class="customer-role" tabindex="0">Shieldmaiden of Rohan</span>
+                            <button class="customer-btn" tabindex="-1">See the review</button>
                         </div>
 
                         <div class="customer-review">
-                            <p class="customer-para">
+                            <p class="customer-para" tabindex="0">
                                 <i class="fas fa-quote-left customer-quote"></i>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
                                 totam
@@ -58,7 +58,7 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
                             </div>
-                            <button class="customer-btn">Back to profile</button>
+                            <button class="customer-btn" tabindex="-1">Back to profile</button>
                         </div>
                     </div>
                 </div>
@@ -68,13 +68,13 @@
                             <div class="customer-img">
                                 <img src="images/customer-img-2.png" alt="customer">
                             </div>
-                            <h3 class="customer-name">Boromir</h3>
-                            <span class="customer-role">A warrior in Gondor</span>
-                            <button class="customer-btn">See the review</button>
+                            <h3 class="customer-name" tabindex="0">Boromir</h3>
+                            <span class="customer-role" tabindex="0">Warrior in Gondor</span>
+                            <button class="customer-btn" tabindex="-1">See the review</button>
                         </div>
 
                         <div class="customer-review">
-                            <p class="customer-para">
+                            <p class="customer-para" tabindex="0">
                                 <i class="fas fa-quote-left customer-quote"></i>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
                                 totam
@@ -91,7 +91,7 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
                             </div>
-                            <button class="customer-btn">Back to profile</button>
+                            <button class="customer-btn" tabindex="-1">Back to profile</button>
                         </div>
                     </div>
                 </div>
@@ -101,13 +101,13 @@
                             <div class="customer-img">
                                 <img src="images/customer-img-3.png" alt="customer">
                             </div>
-                            <h3 class="customer-name">Arwen</h3>
-                            <span class="customer-role">Queen of Gondor</span>
-                            <button class="customer-btn">See the review</button>
+                            <h3 class="customer-name" tabindex="0">Arwen</h3>
+                            <span class="customer-role" tabindex="0">Queen of Gondor</span>
+                            <button class="customer-btn" tabindex="-1">See the review</button>
                         </div>
 
                         <div class="customer-review">
-                            <p class="customer-para">
+                            <p class="customer-para" tabindex="0">
                                 <i class="fas fa-quote-left customer-quote"></i>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
                                 totam
@@ -124,7 +124,7 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
                             </div>
-                            <button class="customer-btn">Back to profile</button>
+                            <button class="customer-btn"tabindex="-1">Back to profile</button>
                         </div>
                     </div>
                 </div>
@@ -134,22 +134,22 @@
 
     <section class="team">
         <div class="team-wrapper">
-            <h2 class="team-heading">TEAM</h2>
+            <h2 class="team-heading" tabindex="0">TEAM</h2>
             <div class="team-members">
-                <div class="member">
+                <div class="member" tabindex="0" aria-label="team member 1">
                     <img src="images/team-member-1.png" alt="team member" class="member-img">
-                    <h3 class="member-name">Sam Gamgee | <span class="member-role">Designer</span></h3>
-                    <ul class="member-skills">
-                        <li>Ps</li>
-                        <li>Figma</li>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>AI</li>
+                    <h3 class="member-name" tabindex="0">Sam Gamgee | <span class="member-role">Designer</span></h3>
+                    <ul class="member-skills" tabindex="0" aria-label= "skills">
+                        <li tabindex="0">Ps</li>
+                        <li tabindex="0">Figma</li>
+                        <li tabindex="0">HTML5</li>
+                        <li tabindex="0">CSS3</li>
+                        <li tabindex="0">AI</li>
                     </ul>
                     <a href="#" class="member-projects">Projects</a>
                     <div class="member-aboutMe">
-                        <h4>About Me</h4>
-                        <p class="member-story">
+                        <h4 tabindex="0">About Sam</h4>
+                        <p class="member-story" tabindex="0">
                             <span>S</span>
                             am was the youngest son of Hamfast and Bell Gamgee, and had many brothers and sisters. A
                             gardener by trade, Sam seemed to be a simple Hobbit of plain speech. However, his love for
@@ -159,25 +159,25 @@
 
                         </p>
                     </div>
-                    <button class="member-btn">
+                    <button class="member-btn" tabindex="-1">
                         <div></div>
                     </button>
                 </div>
 
-                <div class="member">
+                <div class="member" tabindex="0" aria-label="team member 2">
                     <img src="images/team-member-2.png" alt="team member" class="member-img">
-                    <h3 class="member-name">Peregrin Took | <span class="member-role">Developer</span></h3>
-                    <ul class="member-skills">
-                        <li>JavaScript</li>
-                        <li>NodeJS</li>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>MongoDB</li>
+                    <h3 class="member-name" tabindex="0">Peregrin Took | <span class="member-role">Developer</span></h3>
+                    <ul class="member-skills" tabindex="0" aria-label= "skills">
+                        <li tabindex="0">JavaScript</li>
+                        <li tabindex="0">NodeJS</li>
+                        <li tabindex="0">HTML5</li>
+                        <li tabindex="0">CSS3</li>
+                        <li tabindex="0">MongoDB</li>
                     </ul>
                     <a href="#" class="member-projects">Projects</a>
                     <div class="member-aboutMe">
-                        <h4>About Me</h4>
-                        <p class="member-story">
+                        <h4 tabindex="0">About Pippin</h4>
+                        <p class="member-story" tabindex="0">
                             <span>P</span>
                             ippin was born to Paladin Took II and Eglantine Banks on the spring of TA 2990 (SR 1390).
                             He was the youngest of four children and had three older sisters, Pearl, Pimpernel, and
@@ -186,25 +186,25 @@
                             once-removed of Frodo Baggins, and the first-cousin twice-removed of Bilbo.
                         </p>
                     </div>
-                    <button class="member-btn">
+                    <button class="member-btn" tabindex="-1">
                         <div></div>
                     </button>
                 </div>
 
-                <div class="member">
+                <div class="member" tabindex="0" aria-label="team member 3">
                     <img src="images/team-member-3.png" alt="team member" class="member-img">
-                    <h3 class="member-name">Gimli | <span class="member-role">Designer</span></h3>
-                    <ul class="member-skills">
-                        <li>Ae</li>
-                        <li>Pr</li>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Inkspace</li>
+                    <h3 class="member-name" tabindex="0">Gimli | <span class="member-role">Designer</span></h3>
+                    <ul class="member-skills" tabindex="0" aria-label= "skills">
+                        <li tabindex="0">Ae</li>
+                        <li tabindex="0">Pr</li>
+                        <li tabindex="0">HTML5</li>
+                        <li tabindex="0">CSS3</li>
+                        <li tabindex="0">Inkspace</li>
                     </ul>
                     <a href="#" class="member-projects">Projects</a>
                     <div class="member-aboutMe">
-                        <h4>About Me</h4>
-                        <p class="member-story">
+                        <h4 tabindex="0">About Gimli</h4>
+                        <p class="member-story" tabindex="0">
                             <span>G</span>
                             imli was the son of Glóin and a nephew of Óin, both former companions of Bilbo Baggins. He
                             was a descendant of Durin the Deathless, father of the first house of dwarven people. Gimli
@@ -213,7 +213,7 @@
                             and his brother Dwalin, two more former companions of Bilbo
                         </p>
                     </div>
-                    <button class="member-btn">
+                    <button class="member-btn" tabindex="-1">
                         <div></div>
                     </button>
                 </div>
@@ -223,13 +223,13 @@
 
     <section class="contact">
         <div class="contact-wrapper">
-            <h2 class="contact-heading">CONTACT</h2>
+            <h2 class="contact-heading" tabindex="0">CONTACT</h2>
             <div class="contact-form-wrapper">
                 <img src="images/form-img.png" alt="letter" class="contact-img">
-                <form action="#" class="contact-form">
-                    <input type="text" placeholder="Your Name" class="inputs form-name">
-                    <input type="email" placeholder="Your Email" class="inputs form-email">
-                    <textarea placeholder="Your Message" class="inputs form-textArea"></textarea>
+                <form action="yeah" class="contact-form" tabindex="0" aria-label="contact form">
+                    <input type="text" placeholder="Your Name" class="inputs form-name" aria-required="true">
+                    <input type="email" placeholder="Your Email" class="inputs form-email" aria-required="true">
+                    <textarea placeholder="Your Message" class="inputs form-textArea" aria-required="true"></textarea>
                     <button type="submit" class="form-btn">Send</button>
                     <p class="form-successText">Your message has successfully sent</p>
                     <p class="form-warningText">Please type everything correctly</p>
@@ -242,6 +242,10 @@
     <footer class="footer">
         <p class="footer-desc">Coded by gokseloz with love</p>
     </footer>
+
+    <a href="#intro" class="scroll-up-btn">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
 
     <script src="js/script.js"></script>
