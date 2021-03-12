@@ -21,43 +21,46 @@ html {
 
 .intro {
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
   font-size: 1rem; }
   @media (min-width: 650px) {
     .intro {
       font-size: 1.2rem; } }
   @media (min-width: 950px) {
     .intro {
-      font-size: 1.5rem; } }
+      font-size: 1.3rem; } }
   .intro-wrapper {
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    max-width: 87.5rem; }
   .intro-rotating-bg {
     position: absolute;
-    top: -65rem;
-    width: 84rem;
-    height: 84rem;
+    top: -66rem;
+    width: 85rem;
+    height: 85rem;
     border-radius: 45%;
     background-color: rgba(50, 231, 255, 0.8);
     animation: rotate 30s linear infinite; }
     @media (min-width: 650px) {
       .intro-rotating-bg {
-        top: -75rem;
+        top: -76rem;
         width: 100rem;
         height: 100rem; } }
     @media (min-width: 950px) {
       .intro-rotating-bg {
-        top: -86rem;
+        top: -90rem;
         width: 120rem;
         height: 120rem; } }
     @media (min-width: 1350px) {
       .intro-rotating-bg {
-        top: -127rem;
-        width: 160rem;
-        height: 160rem; } }
+        top: -150rem;
+        width: 180rem;
+        height: 180rem; } }
     .intro-rotating-bg::after {
       content: "";
       position: absolute;
@@ -78,12 +81,13 @@ html {
       color: #fff;
       font-weight: 700;
       word-break: break-all;
-      transition: width 1.5s;
+      transition: width .5s;
       text-align: center;
       font-size: 1em; }
       .intro-nav-link:hover {
         width: 5.5rem;
-        background-color: rgba(255, 255, 255, 0.2); }
+        background-color: rgba(255, 255, 255, 0.2);
+        transition: width 1.5s; }
         @media (min-width: 650px) {
           .intro-nav-link:hover {
             width: 7rem; } }
@@ -106,7 +110,7 @@ html {
     font-size: 1.5rem; }
     @media (min-width: 650px) {
       .intro-heading {
-        top: 21rem;
+        top: 19rem;
         font-size: 2.4rem; } }
     @media (min-width: 950px) {
       .intro-heading {
@@ -114,8 +118,7 @@ html {
         font-size: 3rem; } }
     @media (min-width: 950px) {
       .intro-heading {
-        top: 24rem;
-        font-size: 4.5rem; } }
+        font-size: 4rem; } }
   .intro-logo {
     position: absolute;
     bottom: 6rem; }
@@ -167,7 +170,7 @@ html {
           width: 22rem;
           height: 22rem;
           font-size: 1.5rem;
-          margin: 2.5rem; } }
+          margin: 2.39rem; } }
       .customers-testimonials .customer.rotate {
         transform: rotateY(180deg); }
       .customers-testimonials .customer-profile {
@@ -282,7 +285,7 @@ html {
       flex-direction: column;
       align-items: flex-start;
       margin: 2rem 1rem;
-      padding: .5rem;
+      padding: 1rem;
       background-color: #fffeee;
       box-shadow: 0.5rem 0.5rem 1rem rgba(136, 136, 136, 0.2), -0.5rem -0.5rem 1rem rgba(136, 136, 136, 0.2);
       opacity: .7;
@@ -292,7 +295,7 @@ html {
         .team-members .member {
           width: 22rem;
           font-size: 1.2rem;
-          margin: 2.5rem; } }
+          margin: 2.39rem; } }
       @media (min-width: 1350px) {
         .team-members .member:nth-child(1) {
           transform: translateY(6rem); }
@@ -369,7 +372,8 @@ html {
         height: 2rem;
         border-radius: 50%;
         background-color: #222;
-        transition: transform .5s; }
+        transition: transform .5s;
+        cursor: pointer; }
         .team-members .member-btn.active {
           transform: rotate(405deg); }
         .team-members .member-btn div {
@@ -400,28 +404,66 @@ html {
     color: #888;
     margin-bottom: 2rem;
     text-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.1); }
+    @media (min-width: 650px) {
+      .contact-heading {
+        font-size: 4.5rem; } }
+    @media (min-width: 1350px) {
+      .contact-heading {
+        font-size: 5.5rem; } }
   .contact-form-wrapper {
     background-color: #e5e9ff;
     border-radius: .5rem;
     display: flex;
     justify-content: center;
-    perspective: 1000px; }
+    align-items: center;
+    perspective: 1500px; }
     @media (min-width: 650px) {
       .contact-form-wrapper {
         background-color: #e5e9ff;
-        padding: 4rem; } }
+        padding: 2rem 5rem; } }
+    @media (min-width: 1350px) {
+      .contact-form-wrapper {
+        background-color: #e5e9ff;
+        padding: 0 5rem; } }
   .contact-img {
     display: none; }
+    @media (min-width: 1350px) {
+      .contact-img {
+        width: 35rem;
+        display: block;
+        padding: 2rem;
+        background-color: rgba(50, 231, 255, 0.8);
+        transform: rotateY(30deg);
+        box-shadow: -1rem 1rem 2rem #888;
+        transition: box-shadow .5s, transform .5s; } }
+    .contact-img:hover {
+      transform: translateY(-1rem) rotateY(30deg);
+      box-shadow: -2rem 2rem 4rem #888; }
   .contact-form {
     width: 20rem;
     padding: 1.5rem;
-    box-shadow: .5rem .5rem 1rem #aaa;
+    box-shadow: 1rem 1rem 2rem #888;
     background-color: #fff;
-    font-size: 1rem; }
+    font-size: 1rem;
+    transition: box-shadow .5s, transform .5s; }
+    .contact-form:hover {
+      transform: translateY(-1rem);
+      box-shadow: 2rem 2rem 4rem #888; }
     @media (min-width: 650px) {
       .contact-form {
         width: 26rem;
         font-size: 1.3rem; } }
+    @media (min-width: 921px) {
+      .contact-form {
+        width: 30rem;
+        font-size: 1.5rem; } }
+    @media (min-width: 1350px) {
+      .contact-form {
+        padding: 3rem;
+        transform: rotateY(-30deg);
+        height: min-content; }
+        .contact-form:hover {
+          transform: translateY(-1rem) rotateY(-30deg); } }
     .contact-form .form-name,
     .contact-form .form-email {
       font-size: .6em;

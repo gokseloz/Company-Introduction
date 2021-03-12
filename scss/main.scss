@@ -4,15 +4,18 @@
 
 .intro {
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
     font-size: 1rem;
+
 
     @media (min-width:650px) {
         font-size: 1.2rem;
     }
 
     @media (min-width:950px) {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     &-wrapper {
@@ -21,32 +24,34 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 87.5rem;
     }
 
     &-rotating-bg {
         position: absolute;
-        top: -65rem;
-        width: 84rem;
-        height: 84rem;
+        top: -66rem;
+        width: 85rem;
+        height: 85rem;
         border-radius: 45%;
         background-color: $c-turquois;
         animation: rotate 30s linear infinite;
 
         @media (min-width:650px) {
-            top: -75rem;
+            top: -76rem;
             width: 100rem;
             height: 100rem;
         }
 
         @media (min-width:950px) {
-            top: -86rem;
+            top: -90rem;
             width: 120rem;
             height: 120rem;
         }
+
         @media (min-width:1350px) {
-            top: -127rem;
-            width: 160rem;
-            height: 160rem;
+            top: -150rem;
+            width: 180rem;
+            height: 180rem;
         }
 
         &::after {
@@ -73,17 +78,20 @@
             color: $c-white;
             font-weight: 700;
             word-break: break-all;
-            transition: width 1.5s;
+            transition: width .5s;
             text-align: center;
             font-size: 1em;
 
             &:hover {
                 width: 5.5rem;
                 background-color: rgba($c-white, .2);
+                transition: width 1.5s;
+
 
                 @media (min-width:650px) {
                     width: 7rem;
                 }
+
                 @media (min-width:950px) {
                     width: 10rem;
                 }
@@ -107,16 +115,17 @@
         font-size: 1.5rem;
 
         @media (min-width:650px) {
-            top: 21rem;
+            top: 19rem;
             font-size: 2.4rem;
         }
+
         @media (min-width:950px) {
             top: 22rem;
             font-size: 3rem;
         }
+
         @media (min-width:950px) {
-            top: 24rem;
-            font-size: 4.5rem;
+            font-size: 4rem;
         }
     }
 
@@ -151,6 +160,7 @@
         @media (min-width:650px) {
             font-size: 4.5rem;
         }
+
         @media (min-width:1350px) {
             font-size: 5.5rem;
         }
@@ -190,7 +200,7 @@
                 width: 22rem;
                 height: 22rem;
                 font-size: 1.5rem;
-                margin: 2.5rem;
+                margin: 2.39rem;
             }
 
 
@@ -324,7 +334,7 @@
         align-items: center;
         padding: 2rem;
 
-        
+
     }
 
     &-heading {
@@ -336,6 +346,7 @@
         @media (min-width:650px) {
             font-size: 4.5rem;
         }
+
         @media (min-width:1350px) {
             font-size: 5.5rem;
         }
@@ -354,7 +365,7 @@
             flex-direction: column;
             align-items: flex-start;
             margin: 2rem 1rem;
-            padding: .5rem;
+            padding: 1rem;
             background-color: $c-white-dark;
             box-shadow: .5rem .5rem 1rem rgba($c-gray, .2), -.5rem -.5rem 1rem rgba($c-gray, .2);
             opacity: .7;
@@ -364,14 +375,15 @@
             @media (min-width:650px) {
                 width: 22rem;
                 font-size: 1.2rem;
-                margin: 2.5rem;
+                margin: 2.39rem;
             }
 
             @media (min-width:1350px) {
-                &:nth-child(1){
+                &:nth-child(1) {
                     transform: translateY(6rem);
                 }
-                &:nth-child(2){
+
+                &:nth-child(2) {
                     transform: translateY(3rem);
                 }
             }
@@ -471,7 +483,7 @@
                 border-radius: 50%;
                 background-color: $c-black-light;
                 transition: transform .5s;
-
+                cursor: pointer;
 
                 &.active {
                     transform: rotate(405deg);
@@ -517,6 +529,14 @@
         color: $c-gray;
         margin-bottom: 2rem;
         text-shadow: .3rem .3rem .3rem rgba($c-black, 0.1);
+
+        @media (min-width:650px) {
+            font-size: 4.5rem;
+        }
+
+        @media (min-width:1350px) {
+            font-size: 5.5rem;
+        }
     }
 
     &-form-wrapper {
@@ -524,32 +544,72 @@
         border-radius: .5rem;
         display: flex;
         justify-content: center;
-        perspective: 1000px;
+        align-items: center;
+        perspective: 1500px;
+
 
         @media (min-width:650px) {
             background-color: #e5e9ff;
-            padding: 4rem;
+            padding: 2rem 5rem;
+        }
 
+        @media (min-width:1350px) {
+            background-color: #e5e9ff;
+            padding: 0 5rem;
         }
     }
 
     &-img {
         display: none;
+
+        @media (min-width:1350px) {
+            width: 35rem;
+            display: block;
+            padding: 2rem;
+            background-color: $c-turquois;
+            transform: rotateY(30deg);
+            box-shadow: -1rem 1rem 2rem $c-gray;
+            transition: box-shadow .5s, transform .5s;
+        }
+
+        &:hover {
+            transform: translateY(-1rem) rotateY(30deg);
+            box-shadow: -2rem 2rem 4rem $c-gray;
+        }
     }
 
     &-form {
         width: 20rem;
         padding: 1.5rem;
-        box-shadow: .5rem .5rem 1rem #aaa;
+        box-shadow: 1rem 1rem 2rem $c-gray;
         background-color: $c-white;
         font-size: 1rem;
+        transition: box-shadow .5s, transform .5s;
+
+        &:hover {
+            transform: translateY(-1rem);
+            box-shadow: 2rem 2rem 4rem $c-gray;
+        }
 
         @media (min-width:650px) {
             width: 26rem;
             font-size: 1.3rem;
         }
 
-        @media (min-width:900px) {}
+        @media (min-width:921px) {
+            width: 30rem;
+            font-size: 1.5rem;
+        }
+
+        @media (min-width:1350px) {
+            padding: 3rem;
+            transform: rotateY(-30deg);
+            height: min-content;
+
+            &:hover {
+                transform: translateY(-1rem) rotateY(-30deg);
+            }
+        }
 
 
         .form-name,
