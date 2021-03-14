@@ -57,6 +57,7 @@
         font-size: 1rem;
         transition: box-shadow .5s, transform .5s;
         border-radius: .5rem;
+        position: relative;
 
         &:hover {
             transform: translateY(-1rem);
@@ -84,7 +85,6 @@
                 transform: translateY(-1rem) rotateY(-30deg);
             }
         }
-
 
         .form-name,
         .form-email {
@@ -125,10 +125,11 @@
             padding: .5em;
             color: $c-white;
             font-size: .6em;
-            letter-spacing: .2rem;
+            letter-spacing: .1rem;
             border-radius: 2rem;
             background-color: $c-turquois;
             transition: background-color .5s;
+            cursor: pointer;
 
             &:hover {
                 background-color: $c-turquois-hover;

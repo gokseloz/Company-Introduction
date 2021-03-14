@@ -45,6 +45,208 @@ html {
       .scroll-up-btn i {
         font-size: 1rem; } }
 
+.btn-turquoise {
+  border: none;
+  width: 100%;
+  padding: .5rem;
+  color: #fff;
+  font-size: .7em;
+  letter-spacing: .1rem;
+  border-radius: 2rem;
+  background-color: rgba(50, 231, 255, 0.8);
+  transition: background-color .5s;
+  cursor: pointer; }
+  .btn-turquoise:hover {
+    background-color: #32e7ff; }
+
+.customer {
+  width: 17rem;
+  height: 17rem;
+  position: relative;
+  margin: 2rem 1rem;
+  transform-style: preserve-3d;
+  transition: transform .5s linear;
+  font-size: 1rem; }
+  .customer.rotate {
+    transform: rotateY(180deg); }
+  @media (min-width: 650px) {
+    .customer {
+      width: 22rem;
+      height: 22rem;
+      font-size: 1.5rem;
+      margin: 2.39rem; } }
+  .customer-profile {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(136, 136, 136, 0.1);
+    box-shadow: 0.5rem 0.5rem 1rem rgba(136, 136, 136, 0.2), -0.5rem -0.5rem 1rem rgba(136, 136, 136, 0.2);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    backface-visibility: hidden;
+    transform: rotateY(0);
+    font-size: inherit; }
+    .customer-profile .customer-img img {
+      width: 7rem;
+      height: 7rem;
+      border-radius: 50%;
+      object-fit: cover; }
+    .customer-profile .customer-name {
+      font-size: 1em; }
+    .customer-profile .customer-role {
+      font-size: .8em;
+      letter-spacing: .05rem; }
+    .customer-profile .customer-btn {
+      border: none;
+      width: 100%;
+      padding: .5rem;
+      color: #fff;
+      font-size: .7em;
+      letter-spacing: .1rem;
+      border-radius: 2rem;
+      background-color: rgba(50, 231, 255, 0.8);
+      transition: background-color .5s;
+      cursor: pointer; }
+      .customer-profile .customer-btn:hover {
+        background-color: #32e7ff; }
+  .customer-review {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(136, 136, 136, 0.1);
+    box-shadow: 0.5rem 0.5rem 1rem rgba(136, 136, 136, 0.2), -0.5rem -0.5rem 1rem rgba(136, 136, 136, 0.2);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: inherit; }
+    .customer-review .customer-quote {
+      color: #f08e0f;
+      font-size: 1.5em; }
+    .customer-review .customer-quote:nth-child(2) {
+      margin-left: .8rem;
+      position: absolute;
+      margin-top: .3rem; }
+    .customer-review .customer-para {
+      font-size: .8em;
+      text-align: justify; }
+    .customer-review .customer-stars {
+      color: #f08e0f; }
+
+.team-member {
+  position: relative;
+  width: 17rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 2rem 1rem;
+  padding: 1rem;
+  background-color: #fffeee;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(136, 136, 136, 0.2), -0.5rem -0.5rem 1rem rgba(136, 136, 136, 0.2);
+  opacity: .7;
+  transition: opacity .3s;
+  font-size: 1rem; }
+  @media (min-width: 650px) {
+    .team-member {
+      width: 22rem;
+      font-size: 1.2rem;
+      margin: 2.39rem; } }
+  @media (min-width: 1350px) {
+    .team-member:nth-child(1) {
+      transform: translateY(6rem); }
+    .team-member:nth-child(2) {
+      transform: translateY(3rem); } }
+  .team-member:hover {
+    opacity: 1; }
+  .team-member-img {
+    width: 100%; }
+  .team-member-name {
+    font-size: 1em;
+    margin-top: 1em;
+    color: #796717; }
+    .team-member-name span {
+      font-size: .8em; }
+  .team-member-skills {
+    font-size: .8em;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #505050; }
+  .team-member-projects {
+    font-size: .8em;
+    letter-spacing: .07em;
+    color: #fff;
+    padding: .3em .8em;
+    background-color: #fab34a;
+    border-radius: 2rem; }
+  .team-member-aboutMe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2em;
+    background-color: #fd4545;
+    transition: transform 1s;
+    transform: scale(0);
+    transform-origin: top right;
+    border-radius: 15em 0 15em 15em;
+    transition: transform .5s, border-radius .7s;
+    opacity: .9; }
+    .team-member-aboutMe.active {
+      transform: scale(1);
+      border-radius: 0; }
+    .team-member-aboutMe h4 {
+      font-size: 1.8em;
+      color: #fff;
+      margin-bottom: 1em; }
+  .team-member-story {
+    color: #eee;
+    font-size: .9em;
+    text-align: justify;
+    display: flow-root; }
+    .team-member-story span {
+      float: left;
+      font-size: 2.5em;
+      margin-top: -.5rem;
+      shape-outside: polygon(0 0, 100% 0, 100% 80%, 0 80%);
+      margin-right: .2em;
+      font-weight: bold; }
+  .team-member-btn {
+    position: absolute;
+    right: -.5em;
+    top: -.5em;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #222;
+    transition: transform .5s;
+    cursor: pointer; }
+    .team-member-btn.active {
+      transform: rotate(405deg); }
+    .team-member-btn div {
+      width: 70%;
+      height: .1rem;
+      background-color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+
 .section-heading {
   font-size: 2.5rem;
   color: #888;
@@ -192,99 +394,6 @@ html {
           transform: translateY(3rem); }
         .customers-testimonials .customer-card-wrapper:nth-child(3) {
           transform: translateY(6rem); } }
-    .customers-testimonials .customer {
-      width: 17rem;
-      height: 17rem;
-      position: relative;
-      margin: 2rem 1rem;
-      transform-style: preserve-3d;
-      transition: transform .5s linear;
-      font-size: 1rem; }
-      @media (min-width: 650px) {
-        .customers-testimonials .customer {
-          width: 22rem;
-          height: 22rem;
-          font-size: 1.5rem;
-          margin: 2.39rem; } }
-      .customers-testimonials .customer.rotate {
-        transform: rotateY(180deg); }
-      .customers-testimonials .customer-profile {
-        width: 100%;
-        height: 100%;
-        background-color: rgba(136, 136, 136, 0.1);
-        box-shadow: 0.5rem 0.5rem 1rem rgba(136, 136, 136, 0.2), -0.5rem -0.5rem 1rem rgba(136, 136, 136, 0.2);
-        padding: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        backface-visibility: hidden;
-        transform: rotateY(0);
-        font-size: inherit; }
-        .customers-testimonials .customer-profile .customer-img img {
-          width: 7rem;
-          height: 7rem;
-          border-radius: 50%;
-          object-fit: cover; }
-        .customers-testimonials .customer-profile .customer-name {
-          font-size: 1em; }
-        .customers-testimonials .customer-profile .customer-role {
-          font-size: .8em;
-          letter-spacing: .05rem; }
-        .customers-testimonials .customer-profile .customer-btn {
-          border: none;
-          width: 100%;
-          padding: .5rem;
-          color: #fff;
-          font-size: .7em;
-          letter-spacing: .1rem;
-          border-radius: 2rem;
-          background-color: rgba(50, 231, 255, 0.8);
-          transition: background-color .5s;
-          cursor: pointer; }
-          .customers-testimonials .customer-profile .customer-btn:hover {
-            background-color: #32e7ff; }
-      .customers-testimonials .customer-review {
-        width: 100%;
-        height: 100%;
-        background-color: rgba(136, 136, 136, 0.1);
-        box-shadow: 0.5rem 0.5rem 1rem rgba(136, 136, 136, 0.2), -0.5rem -0.5rem 1rem rgba(136, 136, 136, 0.2);
-        padding: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        backface-visibility: hidden;
-        transform: rotateY(180deg);
-        position: absolute;
-        top: 0;
-        left: 0;
-        font-size: inherit; }
-        .customers-testimonials .customer-review .customer-quote {
-          color: #f08e0f;
-          font-size: 1.5em; }
-        .customers-testimonials .customer-review .customer-quote:nth-child(2) {
-          margin-left: .8rem;
-          position: absolute;
-          margin-top: .3rem; }
-        .customers-testimonials .customer-review .customer-para {
-          font-size: .8em;
-          text-align: justify; }
-        .customers-testimonials .customer-review .customer-stars {
-          color: #f08e0f; }
-        .customers-testimonials .customer-review .customer-btn {
-          border: none;
-          width: 100%;
-          padding: .5rem;
-          color: #fff;
-          font-size: .7em;
-          letter-spacing: .1rem;
-          border-radius: 2rem;
-          background-color: rgba(50, 231, 255, 0.8);
-          transition: background-color .5s;
-          cursor: pointer; }
-          .customers-testimonials .customer-review .customer-btn:hover {
-            background-color: #32e7ff; }
 
 .team {
   position: relative; }
@@ -296,112 +405,6 @@ html {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; }
-    .team-members .member {
-      position: relative;
-      width: 17rem;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      margin: 2rem 1rem;
-      padding: 1rem;
-      background-color: #fffeee;
-      box-shadow: 0.5rem 0.5rem 1rem rgba(136, 136, 136, 0.2), -0.5rem -0.5rem 1rem rgba(136, 136, 136, 0.2);
-      opacity: .7;
-      transition: opacity .3s;
-      font-size: 1rem; }
-      @media (min-width: 650px) {
-        .team-members .member {
-          width: 22rem;
-          font-size: 1.2rem;
-          margin: 2.39rem; } }
-      @media (min-width: 1350px) {
-        .team-members .member:nth-child(1) {
-          transform: translateY(6rem); }
-        .team-members .member:nth-child(2) {
-          transform: translateY(3rem); } }
-      .team-members .member:hover {
-        opacity: 1; }
-      .team-members .member-img {
-        width: 100%; }
-      .team-members .member-name {
-        font-size: 1em;
-        margin-top: 1em;
-        color: #796717; }
-        .team-members .member-name span {
-          font-size: .8em; }
-      .team-members .member-skills {
-        font-size: .8em;
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        margin-top: 1em;
-        margin-bottom: 1em;
-        color: #505050; }
-      .team-members .member-projects {
-        font-size: .8em;
-        letter-spacing: .07em;
-        color: #fff;
-        padding: .3em .8em;
-        background-color: #fab34a;
-        border-radius: 2rem; }
-      .team-members .member-aboutMe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 1.2em;
-        background-color: #fd4545;
-        transition: transform 1s;
-        transform: scale(0);
-        transform-origin: top right;
-        border-radius: 15em 0 15em 15em;
-        transition: transform .5s, border-radius .7s;
-        opacity: .9; }
-        .team-members .member-aboutMe.active {
-          transform: scale(1);
-          border-radius: 0; }
-        .team-members .member-aboutMe h4 {
-          font-size: 1.8em;
-          color: #fff;
-          margin-bottom: 1em; }
-      .team-members .member-story {
-        color: #eee;
-        font-size: .9em;
-        text-align: justify;
-        display: flow-root; }
-        .team-members .member-story span {
-          float: left;
-          font-size: 2.5em;
-          margin-top: -.5rem;
-          shape-outside: polygon(0 0, 100% 0, 100% 80%, 0 80%);
-          margin-right: .2em;
-          font-weight: bold; }
-      .team-members .member-btn {
-        position: absolute;
-        right: -.5em;
-        top: -.5em;
-        border: none;
-        width: 2rem;
-        height: 2rem;
-        border-radius: 50%;
-        background-color: #222;
-        transition: transform .5s;
-        cursor: pointer; }
-        .team-members .member-btn.active {
-          transform: rotate(405deg); }
-        .team-members .member-btn div {
-          width: 70%;
-          height: .1rem;
-          background-color: #fff;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%); }
 
 .contact {
   position: relative;
@@ -448,7 +451,8 @@ html {
     background-color: #fff;
     font-size: 1rem;
     transition: box-shadow .5s, transform .5s;
-    border-radius: .5rem; }
+    border-radius: .5rem;
+    position: relative; }
     .contact-form:hover {
       transform: translateY(-1rem);
       box-shadow: 2rem 2rem 4rem #888; }
@@ -501,10 +505,11 @@ html {
       padding: .5em;
       color: #fff;
       font-size: .6em;
-      letter-spacing: .2rem;
+      letter-spacing: .1rem;
       border-radius: 2rem;
       background-color: rgba(50, 231, 255, 0.8);
-      transition: background-color .5s; }
+      transition: background-color .5s;
+      cursor: pointer; }
       .contact-form .form-btn:hover {
         background-color: #32e7ff; }
     .contact-form .form-successText {

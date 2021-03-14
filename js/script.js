@@ -3,21 +3,16 @@ let customerBtn = document.querySelectorAll(".customer-btn")
 let customer = document.querySelectorAll(".customer")
 
 let inputs = document.querySelectorAll(".inputs")
-let successText = document.querySelector(".form-successText")
-let warningText = document.querySelector(".form-warningText")
 let contactForm = document.querySelector(".contact-form")
 let inputName = document.querySelector(".form-name")
 let inputEmail = document.querySelector(".form-email")
 let textArea = document.querySelector(".form-textArea")
+let successText = document.querySelector(".form-successText")
+let warningText = document.querySelector(".form-warningText")
 
 customerBtn.forEach(btn => {
     btn.addEventListener("click", () => {
         btn.parentElement.parentElement.classList.toggle("rotate")
-        if (btn.parentElement.parentElement.classList.contains("rotate")) {
-            btn.setAttribute("aria-pressed", "true")
-        } else {
-            btn.setAttribute("aria-pressed", "false")
-        }
     })
 })
 
