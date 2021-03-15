@@ -1,18 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&family=Monoton&display=swap");
-html {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
   box-sizing: border-box;
   font-family: "Bellota Text", cursive;
   scroll-behavior: smooth; }
 
+ol, ul {
+  list-style: none; }
+
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
   outline: none;
-  text-decoration: none;
-  list-style-type: none; }
+  text-decoration: none; }
 
 @keyframes rotate {
   0% {
@@ -44,6 +58,47 @@ html {
     @media (min-width: 1350px) {
       .scroll-up-btn i {
         font-size: 1rem; } }
+
+.heading {
+  text-align: center; }
+  .heading-primary {
+    position: absolute;
+    top: 16rem;
+    font-weight: 400;
+    font-family: "Monoton", cursive;
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: #fff;
+    padding: .2em .4em;
+    text-shadow: 0.2rem 0.2rem 0.2rem #888;
+    letter-spacing: .1rem;
+    opacity: .9;
+    border-radius: .7rem; }
+    @media (min-width: 650px) {
+      .heading-primary {
+        top: 19rem;
+        font-size: 2.4rem; } }
+    @media (min-width: 950px) {
+      .heading-primary {
+        top: 20rem;
+        font-size: 3rem; } }
+    @media (min-width: 1550px) {
+      .heading-primary {
+        top: 23rem;
+        font-size: 4rem; } }
+  .heading-secondary {
+    font-size: 2.5rem;
+    color: #888;
+    margin-bottom: 2rem;
+    text-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
+    letter-spacing: .1rem;
+    font-weight: 700; }
+    @media (min-width: 650px) {
+      .heading-secondary {
+        font-size: 4.5rem; } }
+    @media (min-width: 1350px) {
+      .heading-secondary {
+        font-size: 5.5rem; } }
 
 .btn {
   border: none;
@@ -90,24 +145,16 @@ html {
     .btn-send:hover {
       background-color: #f06060; }
 
-.section-heading {
-  font-size: 2.5rem;
-  color: #888;
-  margin-bottom: 2rem;
-  text-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.1); }
-  @media (min-width: 650px) {
-    .section-heading {
-      font-size: 4.5rem; } }
-  @media (min-width: 1350px) {
-    .section-heading {
-      font-size: 5.5rem; } }
-
 .section-wrapper {
+  margin: 0 auto;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem; }
+  @media (min-width: 1450px) {
+    .section-wrapper {
+      width: 85%; } }
 
 .intro {
   position: relative;
@@ -184,32 +231,6 @@ html {
         @media (min-width: 950px) {
           .intro-nav-link:hover {
             width: 8rem; } }
-  .intro-heading {
-    position: absolute;
-    top: 16rem;
-    font-weight: 400;
-    font-family: "Monoton", cursive;
-    color: #fff;
-    text-align: center;
-    background-color: #fff;
-    padding: .5rem .6rem;
-    text-shadow: 0.2rem 0.2rem 0.2rem #888;
-    letter-spacing: .1rem;
-    opacity: .9;
-    border-radius: .7rem;
-    font-size: 1.5rem; }
-    @media (min-width: 650px) {
-      .intro-heading {
-        top: 19rem;
-        font-size: 2.4rem; } }
-    @media (min-width: 950px) {
-      .intro-heading {
-        top: 20rem;
-        font-size: 3rem; } }
-    @media (min-width: 1550px) {
-      .intro-heading {
-        top: 23rem;
-        font-size: 4rem; } }
   .intro-logo {
     position: absolute;
     bottom: 8rem; }
@@ -231,17 +252,20 @@ html {
     align-items: center;
     flex-wrap: wrap; }
     .customers-testimonials .customer-card-wrapper {
-      perspective: 100rem; }
+      perspective: 100rem;
+      margin: 2rem 1rem; }
+      @media (min-width: 650px) {
+        .customers-testimonials .customer-card-wrapper {
+          margin: 2.39rem; } }
       @media (min-width: 1350px) {
-        .customers-testimonials .customer-card-wrapper:nth-child(2) {
+        .customers-testimonials .customer-card-wrapper:nth-child(3n-1) {
           transform: translateY(3rem); }
-        .customers-testimonials .customer-card-wrapper:nth-child(3) {
+        .customers-testimonials .customer-card-wrapper:nth-child(3n) {
           transform: translateY(6rem); } }
       .customers-testimonials .customer-card-wrapper .customer {
         width: 17rem;
         height: 17rem;
         position: relative;
-        margin: 2rem 1rem;
         transform-style: preserve-3d;
         transition: transform .5s linear;
         font-size: 1rem; }
@@ -251,8 +275,7 @@ html {
           .customers-testimonials .customer-card-wrapper .customer {
             width: 22rem;
             height: 22rem;
-            font-size: 1.5rem;
-            margin: 2.39rem; } }
+            font-size: 1.5rem; } }
         .customers-testimonials .customer-card-wrapper .customer-profile {
           width: 100%;
           height: 100%;
@@ -335,10 +358,10 @@ html {
           font-size: 1.2rem;
           margin: 2.39rem; } }
       @media (min-width: 1350px) {
-        .team-members .team-member:nth-child(1) {
-          transform: translateY(6rem); }
-        .team-members .team-member:nth-child(2) {
-          transform: translateY(3rem); } }
+        .team-members .team-member:nth-child(3n-1) {
+          transform: translateY(3rem); }
+        .team-members .team-member:nth-child(3n) {
+          transform: translateY(6rem); } }
       .team-members .team-member-img {
         width: 100%; }
       .team-members .team-member-name {
@@ -485,7 +508,7 @@ html {
       font-family: "Bellota Text", cursive;
       width: 100%;
       min-height: 5rem;
-      max-height: 20rem;
+      max-height: 15rem;
       border: none;
       border-radius: .8rem;
       padding: .5em;

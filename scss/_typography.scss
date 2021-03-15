@@ -1,22 +1,125 @@
-.section-heading {
-    font-size: 2.5rem;
-    color: $c-gray;
-    margin-bottom: 2rem;
-    text-shadow: .3rem .3rem .3rem rgba($c-black, 0.1);
+.heading {
+    text-align: center;
 
-    @media (min-width:650px) {
-        font-size: 4.5rem;
+    &-primary {
+        position: absolute;
+        top: 16rem;
+        font-weight: 400;
+        font-family: $monoton;
+        color: $c-white;
+        font-size: 1.5rem;
+        
+        background-color: $c-white;
+        padding: .2em .4em;
+        text-shadow: 0.2rem 0.2rem 0.2rem $c-gray;
+        letter-spacing: .1rem;
+        opacity: .9;
+        border-radius: .7rem;
+
+        @media (min-width:650px) {
+            top: 19rem;
+            font-size: 2.4rem;
+        }
+
+        @media (min-width:950px) {
+            top: 20rem;
+            font-size: 3rem;
+        }
+
+        @media (min-width:1550px) {
+            top: 23rem;
+            font-size: 4rem;
+        }
     }
 
-    @media (min-width:1350px) {
-        font-size: 5.5rem;
+    &-secondary {
+        font-size: 2.5rem;
+        color: $c-gray;
+        margin-bottom: 2rem;
+        text-shadow: .3rem .3rem .3rem rgba($c-black, 0.1);
+        letter-spacing: .1rem;
+        font-weight: 700;
+
+        @media (min-width:650px) {
+            font-size: 4.5rem;
+        }
+
+        @media (min-width:1350px) {
+            font-size: 5.5rem;
+        }
+    }
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+
+    &-turquoise {
+        width: 100%;
+        padding: .5em;
+        color: $c-white;
+        font-size: 1rem;
+        letter-spacing: .1rem;
+        border-radius: 2rem;
+        background-color: $c-turquois;
+        transition: background-color .5s;
+
+        &:hover {
+            background-color: $c-turquois-hover;
+        }
+    }
+
+    &-key {
+        position: absolute;
+        right: -.5rem;
+        top: -.5rem;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: $c-black-light;
+        transition: transform .5s;
+
+        &.active {
+            transform: rotate(405deg);
+        }
+
+        div {
+            width: 70%;
+            height: .1rem;
+            background-color: $c-white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+    }
+
+    &-send {
+        width: 100%;
+        border-radius: 2rem;
+        color: $c-white;
+        font-size: 1rem;
+        letter-spacing: .1rem;
+        background-color: $c-lightCoral;
+        padding: .7rem 0;
+        transition: background-color .5s;
+
+        &:hover {
+            background-color: #f06060;
+        }
     }
 }
 
 .section-wrapper {
+    margin: 0 auto;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem;
+
+    @media (min-width:1450px){
+        width: 85%;
+    }
 }

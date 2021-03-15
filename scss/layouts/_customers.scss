@@ -9,13 +9,18 @@
 
         .customer-card-wrapper {
             perspective: 100rem;
+            margin: 2rem 1rem;
+
+            @media (min-width:650px) {
+                margin: 2.39rem;
+            }
 
             @media (min-width:1350px) {
-                &:nth-child(2) {
+                &:nth-child(3n-1) {
                     transform: translateY(3rem);
                 }
 
-                &:nth-child(3) {
+                &:nth-child(3n) {
                     transform: translateY(6rem);
 
                 }
@@ -25,7 +30,6 @@
                 width: 17rem;
                 height: 17rem;
                 position: relative;
-                margin: 2rem 1rem;
                 transform-style: preserve-3d;
                 transition: transform .5s linear;
                 font-size: 1rem;
@@ -38,7 +42,6 @@
                     width: 22rem;
                     height: 22rem;
                     font-size: 1.5rem;
-                    margin: 2.39rem;
                 }
 
                 &-profile {
