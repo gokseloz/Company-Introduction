@@ -2,33 +2,15 @@
     text-align: center;
 
     &-primary {
-        position: absolute;
-        top: 16rem;
         font-weight: 400;
         font-family: $monoton;
         color: $c-white;
-        font-size: 1.5rem;
         background-color: $c-white;
         padding: .2em .4em;
         text-shadow: 0.2rem 0.2rem 0.2rem $c-gray;
         letter-spacing: .1rem;
         opacity: .9;
-        border-radius: .7rem;
-
-        @media (min-width:650px) {
-            top: 19rem;
-            font-size: 2.4rem;
-        }
-
-        @media (min-width:950px) {
-            top: 20rem;
-            font-size: 3rem;
-        }
-
-        @media (min-width:1550px) {
-            top: 23rem;
-            font-size: 4rem;
-        }
+        border-radius: .7rem; 
     }
 
     &-secondary {
