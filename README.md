@@ -11,9 +11,8 @@
 </ul>
 
 ## What did I learn from this project?
-**abc**
-<ul>
-<li>Difference between children and childNodes, parentElement and parentNodes</li>
+
+-Difference between children and childNodes, parentElement and parentNodes-
 <li>Nice effect by using **transform:scale()** and **transform-origin**
     <ul>
         <li>applied: team section => about me after clicking the button top-right</li>
@@ -52,10 +51,7 @@
         <li>webaim.org</li>
     </ul>
 <li>
-</li>
-<li></li>
 
-</ul>
 
 ## How did I do this?
 ### Technologies
