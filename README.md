@@ -18,7 +18,7 @@
         <li>applied: team section => about me after clicking the button top-right</li>
     </ul>
 </li>
-
+**abc**
 <li>Css <mark>shape-outside</mark> property. (letting content to wrap around the objects)
     <ul>
         <li>applied: team section => about me => first letter</li>
