@@ -5,13 +5,11 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: "Bellota Text", cursive;
   overflow-x: hidden; }
 
 ol, ul {
-  list-style: none; }
+  list-style-type: none; }
 
 *:focus {
   outline: none; }
@@ -19,6 +17,8 @@ ol, ul {
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: inherit; }
 
 a, a:visited, a:hover {
@@ -88,13 +88,16 @@ a, a:visited, a:hover {
     width: 100%;
     padding: .5em;
     color: #fff;
-    font-size: 1rem;
+    font-size: .8rem;
     letter-spacing: .1rem;
     border-radius: 2rem;
     background-color: rgba(50, 231, 255, 0.8);
     transition: background-color .5s; }
     .btn-turquoise:hover {
       background-color: #32e7ff; }
+    @media (min-width: 650px) {
+      .btn-turquoise {
+        font-size: 1.2rem; } }
   .btn-key {
     position: absolute;
     right: -.5rem;
@@ -135,7 +138,7 @@ a, a:visited, a:hover {
   padding: 2rem; }
   @media (min-width: 1450px) {
     .section-wrapper {
-      width: 85%; } }
+      width: 90%; } }
 
 .intro {
   position: relative;
@@ -272,7 +275,7 @@ a, a:visited, a:hover {
             width: 22rem;
             height: 22rem;
             font-size: 1.5rem; } }
-        .customers-testimonials .customer-card-wrapper .customer-profile {
+        .customers-testimonials .customer-card-wrapper .customer-profile, .customers-testimonials .customer-card-wrapper .customer-review {
           width: 100%;
           height: 100%;
           background-color: rgba(136, 136, 136, 0.1);
@@ -285,27 +288,17 @@ a, a:visited, a:hover {
           backface-visibility: hidden;
           transform: rotateY(0);
           font-size: inherit; }
-          .customers-testimonials .customer-card-wrapper .customer-profile .customer-img img {
+          .customers-testimonials .customer-card-wrapper .customer-profile .customer-img img, .customers-testimonials .customer-card-wrapper .customer-review .customer-img img {
             width: 7rem;
             height: 7rem;
             border-radius: 50%;
             object-fit: cover; }
-          .customers-testimonials .customer-card-wrapper .customer-profile .customer-name {
+          .customers-testimonials .customer-card-wrapper .customer-profile .customer-name, .customers-testimonials .customer-card-wrapper .customer-review .customer-name {
             font-size: 1em; }
-          .customers-testimonials .customer-card-wrapper .customer-profile .customer-role {
+          .customers-testimonials .customer-card-wrapper .customer-profile .customer-role, .customers-testimonials .customer-card-wrapper .customer-review .customer-role {
             font-size: .8em;
             letter-spacing: .05rem; }
         .customers-testimonials .customer-card-wrapper .customer-review {
-          width: 100%;
-          height: 100%;
-          background-color: rgba(136, 136, 136, 0.1);
-          box-shadow: 0.5rem 0.5rem 1rem rgba(136, 136, 136, 0.2), -0.5rem -0.5rem 1rem rgba(136, 136, 136, 0.2);
-          padding: 1.5rem;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-between;
-          backface-visibility: hidden;
           transform: rotateY(180deg);
           position: absolute;
           top: 0;
@@ -354,9 +347,9 @@ a, a:visited, a:hover {
           font-size: 1.2rem;
           margin: 2.39rem; } }
       @media (min-width: 1350px) {
-        .team-members .team-member:nth-child(3n-1) {
+        .team-members .team-member:nth-child(3n+2) {
           transform: translateY(3rem); }
-        .team-members .team-member:nth-child(3n) {
+        .team-members .team-member:nth-child(3n+1) {
           transform: translateY(6rem); } }
       .team-members .team-member-img {
         width: 100%; }

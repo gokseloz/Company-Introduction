@@ -38,16 +38,13 @@ html{
 }
 
 body{
-    margin: 0;
-    padding: 0;
     font-family: $bellota;
     overflow-x: hidden;
 }
 
 ol, ul {
-	list-style: none;
+	list-style-type: none;
 }
-
 
 *:focus{
     outline: none;
@@ -56,6 +53,8 @@ ol, ul {
 *,
 *::before,
 *::after {
+    margin: 0;
+    padding: 0;
     box-sizing: inherit;
 }
 

@@ -35,11 +35,11 @@
             }
 
             @media (min-width:1350px) {
-                &:nth-child(3n-1) {
+                &:nth-child(3n+2) {
                     transform: translateY(3rem);
                 }
 
-                &:nth-child(3n) {
+                &:nth-child(3n+1) {
                     transform: translateY(6rem);
                 }
             }
