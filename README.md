@@ -15,24 +15,24 @@
 * Difference between **children** and **childNodes**, **parentElement** and **parentNodes**
 - Nice effect by using **transform:scale()** and **transform-origin**
   - applied: team section => about me after clicking the button top-right
-- Css **shape-outside** property. (letting content to wrap around the objects)
-  -applied: team section => about me => first letter
-  -firefox has nice visualization for shape-outside property
+- Css **shape-outside** property.(letting content to wrap around the objects)
+  - applied: team section => about me => first letter
+  - firefox has nice visualization for shape-outside property
 - Usage of **display:flow-root**
-  -applied: team section => about me. Because the first letter of the text has **float:left** property
-  -it enables the the container to **clear floats**
+  - applied: team section => about me. Because the first letter of the text has **float:left** property
+  - it enables the the container to **clear floats**
 -Flipable card eseential properties
-  -applied: customer section
-  -flipable card container(parent) must have  **perspective()** value
-  -flipable card - must have **transform-style:preserve-3d**
-  -flipable card front face - must have **backface-visibility:hidden**
-  -flipable card back face - must have **backface-visibility:hidden**
+  - applied: customer section
+  - flipable card container(parent) must have  **perspective()** value
+  - flipable card - must have **transform-style:preserve-3d**
+  - flipable card front face - must have **backface-visibility:hidden**
+  - flipable card back face - must have **backface-visibility:hidden**
 -Usage of **em** unit
-  -applied: team and customer section => each team member and customer
-  -firefox has nice visualization for shape-outside property
+  - applied: team and customer section => each team member and customer
+  - firefox has nice visualization for shape-outside property
 -Some **web-accessibility** ideas
-  -applied: tab-index, aria-required, aria-label, alerts for contact form
-  -webaim.org
+  - applied: tab-index, aria-required, aria-label, alerts for contact form
+  - webaim.org
 
 ## How did I do this?
 ### Technologies
