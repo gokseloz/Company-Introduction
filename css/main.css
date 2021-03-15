@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&family=Monoton&display=swap");
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -23,37 +29,6 @@ ol, ul {
 
 a, a:visited, a:hover {
   text-decoration: none; }
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(360deg); } }
-
-.scroll-up-btn {
-  width: 2rem;
-  height: 2rem;
-  background-color: rgba(50, 231, 255, 0.8);
-  padding: .5rem;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  right: .5rem;
-  bottom: .5rem; }
-  @media (min-width: 1350px) {
-    .scroll-up-btn {
-      width: 3rem;
-      height: 3rem;
-      right: 1rem;
-      bottom: 1rem; } }
-  .scroll-up-btn i {
-    font-size: .8rem;
-    color: #fff; }
-    @media (min-width: 1350px) {
-      .scroll-up-btn i {
-        font-size: 1rem; } }
 
 .heading {
   text-align: center; }
@@ -217,18 +192,19 @@ a, a:visited, a:hover {
             width: 8rem; } }
   .intro-heading {
     position: absolute;
-    top: 15rem;
+    top: 16rem;
     font-size: 1.5rem; }
     @media (min-width: 650px) {
       .intro-heading {
-        top: 18rem;
+        top: 19rem;
         font-size: 2.4rem; } }
     @media (min-width: 950px) {
       .intro-heading {
+        top: 20rem;
         font-size: 3rem; } }
     @media (min-width: 1550px) {
       .intro-heading {
-        top: 20rem;
+        top: 23rem;
         font-size: 4rem; } }
   .intro-logo {
     position: absolute;
@@ -529,3 +505,28 @@ a, a:visited, a:hover {
     font-size: .8rem;
     letter-spacing: .1rem;
     color: #505050; }
+
+.scroll-up-btn {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(50, 231, 255, 0.8);
+  padding: .5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: .5rem;
+  bottom: .5rem; }
+  @media (min-width: 1350px) {
+    .scroll-up-btn {
+      width: 3rem;
+      height: 3rem;
+      right: 1rem;
+      bottom: 1rem; } }
+  .scroll-up-btn i {
+    font-size: .8rem;
+    color: #fff; }
+    @media (min-width: 1350px) {
+      .scroll-up-btn i {
+        font-size: 1rem; } }

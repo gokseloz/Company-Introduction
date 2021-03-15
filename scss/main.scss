@@ -1,14 +1,19 @@
-@import "base";
-@import "animations";
-@import "components";
-@import "typography";
-@import "mixins";
+@import "abstracts/animations";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/resets";
+@import "base/typography";
 
 @import "layouts/intro";
 @import "layouts/customers";
 @import "layouts/team";
 @import "layouts/contact";
 @import "layouts/footer";
+
+@import "components";
+
+
 
 
 

@@ -95,20 +95,21 @@
 
     &-heading{
         position: absolute;
-        top: 15rem;
+        top: 16rem;
         font-size: 1.5rem;
         
         @media (min-width:650px) {
-            top: 18rem;
+            top: 19rem;
             font-size: 2.4rem;
         }
 
         @media (min-width:950px) {
+            top: 20rem;
             font-size: 3rem;
         }
 
         @media (min-width:1550px) {
-            top: 20rem;
+            top: 23rem;
             font-size: 4rem;
         }
     }

@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&family=Monoton&display=swap");
+
+html{ 
+    font-size: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: $bellota;
+    overflow-x: hidden;
+}
+
+ol, ul {
+	list-style-type: none;
+}
+
+*:focus{
+    outline: none;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+a, a:visited, a:hover {
+    text-decoration: none;
+  }
