@@ -20,6 +20,99 @@
 
                 }
             }
+
+            .customer {
+                width: 17rem;
+                height: 17rem;
+                position: relative;
+                margin: 2rem 1rem;
+                transform-style: preserve-3d;
+                transition: transform .5s linear;
+                font-size: 1rem;
+
+                &.rotate {
+                    transform: rotateY(180deg);
+                }
+
+                @media (min-width:650px) {
+                    width: 22rem;
+                    height: 22rem;
+                    font-size: 1.5rem;
+                    margin: 2.39rem;
+                }
+
+                &-profile {
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba($c-gray, 0.1);
+                    box-shadow: .5rem .5rem 1rem rgba($c-gray, .2), -.5rem -.5rem 1rem rgba($c-gray, .2);
+                    padding: 1.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    backface-visibility: hidden;
+                    transform: rotateY(0);
+                    font-size: inherit;
+
+                    .customer-img {
+                        img {
+                            width: 7rem;
+                            height: 7rem;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .customer-name {
+                        font-size: 1em;
+                    }
+
+                    .customer-role {
+                        font-size: .8em;
+                        letter-spacing: .05rem;
+
+                    }
+                }
+
+                &-review {
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba($c-gray, 0.1);
+                    box-shadow: .5rem .5rem 1rem rgba($c-gray, .2), -.5rem -.5rem 1rem rgba($c-gray, .2);
+                    padding: 1.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    backface-visibility: hidden;
+                    transform: rotateY(180deg);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    font-size: inherit;
+
+                    .customer-quote {
+                        color: $c-mustard;
+                        font-size: 1.5em;
+                    }
+
+                    .customer-quote:nth-child(2) {
+                        margin-left: .8rem;
+                        position: absolute;
+                        margin-top: .3rem;
+                    }
+
+                    .customer-para {
+                        font-size: .8em;
+                        text-align: justify;
+                    }
+
+                    .customer-stars {
+                        color: $c-mustard;
+                    }
+                }
+            }
         }
     }
 }

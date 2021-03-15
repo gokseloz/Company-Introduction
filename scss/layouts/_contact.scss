@@ -119,23 +119,6 @@
             margin-bottom: .5em;
         }
 
-        .form-btn {
-            border: none;
-            width: 100%;
-            padding: .5em;
-            color: $c-white;
-            font-size: .6em;
-            letter-spacing: .1rem;
-            border-radius: 2rem;
-            background-color: $c-turquois;
-            transition: background-color .5s;
-            cursor: pointer;
-
-            &:hover {
-                background-color: $c-turquois-hover;
-            }
-        }
-
         .form-successText{
             display: none;
             position: absolute;

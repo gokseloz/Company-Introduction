@@ -11,6 +11,119 @@
         align-items: center;
         flex-wrap: wrap;
 
-        
+        .team-member {
+            position: relative;
+            width: 17rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 2rem 1rem;
+            padding: 1rem;
+            background-color: $c-white-dark;
+            box-shadow: .5rem .5rem 1rem rgba($c-gray, .2), -.5rem -.5rem 1rem rgba($c-gray, .2);
+            opacity: .7;
+            transition: opacity .3s;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            @media (min-width:650px) {
+                width: 22rem;
+                font-size: 1.2rem;
+                margin: 2.39rem;
+            }
+
+            @media (min-width:1350px) {
+                &:nth-child(1) {
+                    transform: translateY(6rem);
+                }
+
+                &:nth-child(2) {
+                    transform: translateY(3rem);
+                }
+            }
+
+            &-img {
+                width: 100%;
+            }
+
+            &-name {
+                font-size: 1em;
+                margin-top: 1em;
+                color: $c-olive;
+
+                span {
+                    font-size: .8em;
+                }
+            }
+
+            &-skills {
+                font-size: .8em;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                margin-top: 1em;
+                margin-bottom: 1em;
+                color: $c-gray-dark;
+
+            }
+
+            &-projects {
+                font-size: .8em;
+                letter-spacing: .07em;
+                color: $c-white;
+                padding: .3em .8em;
+                background-color: $c-mustard-light;
+                border-radius: 2rem;
+            }
+
+            &-aboutMe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 1.2em;
+                background-color: $c-cherry;
+                transition: transform 1s;
+                transform: scale(0);
+                transform-origin: top right;
+                border-radius: 15em 0 15em 15em;
+                transition: transform .5s, border-radius .7s;
+                opacity: .9;
+
+                &.active {
+                    transform: scale(1);
+                    border-radius: 0;
+                }
+
+                h4 {
+                    font-size: 1.8em;
+                    color: $c-white;
+                    margin-bottom: 1em;
+                }
+            }
+
+            &-story {
+                color: $c-gray-light;
+                font-size: .9em;
+                text-align: justify;
+                display: flow-root;
+
+                span {
+                    float: left;
+                    font-size: 2.5em;
+                    margin-top: -.5rem;
+                    shape-outside: polygon(0 0, 100% 0, 100% 80%, 0 80%);
+                    margin-right: .2em;
+                    font-weight: bold;
+                }
+            }
+        }
     }
 }
