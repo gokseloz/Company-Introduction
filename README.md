@@ -13,7 +13,7 @@
 ## What did I learn from this project?
 <ul>
 <li>Difference between children and childNodes, parentElement and parentNodes</li>
-<li>Nice effect by using <mark>transform:scale()</mark> and <mark>transform-origin</mark>
+<li>Nice effect by using **transform:scale()** and **transform-origin**
     <ul>
         <li>applied: team section => about me after clicking the button top-right</li>
     </ul>
