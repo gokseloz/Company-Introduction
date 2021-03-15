@@ -2,7 +2,6 @@ let memberBtn = document.querySelectorAll(".team-member-btn")
 let customerBtn = document.querySelectorAll(".customer-btn")
 let customer = document.querySelectorAll(".customer")
 
-let inputs = document.querySelectorAll(".inputs")
 let contactForm = document.querySelector(".contact-form")
 let inputName = document.querySelector(".form-name")
 let inputEmail = document.querySelector(".form-email")
