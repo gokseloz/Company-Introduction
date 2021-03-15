@@ -24,18 +24,17 @@ memberBtn.forEach(btn => {
 });
 
 
-const warning = () => {
+const formWarning = () => {
     warningText.style.display = "block"
     successText.style.display = "none"
     alert("please type everything correctly")
 }
 
-
-const logSubmit = (e) => {
+const formSubmit = (e) => {
     e.preventDefault()
 
     if (inputName.value == "" || inputEmail.value == "" || textArea.value == "") {
-        warning()
+        formWarning()
 
     } else {
         successText.style.display = "block"
@@ -56,8 +55,8 @@ const logSubmit = (e) => {
 
 inputEmail.addEventListener("invalid", (e) => {
     e.preventDefault()
-    warning()
+    formWarning()
 
 })
 
-contactForm.addEventListener("submit", logSubmit)
+contactForm.addEventListener("submit", formSubmit)
