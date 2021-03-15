@@ -11,6 +11,7 @@
 </ul>
 
 ## What did I learn from this project?
+**abc**
 <ul>
 <li>Difference between children and childNodes, parentElement and parentNodes</li>
 <li>Nice effect by using **transform:scale()** and **transform-origin**
@@ -18,7 +19,7 @@
         <li>applied: team section => about me after clicking the button top-right</li>
     </ul>
 </li>
-**abc**
+
 <li>Css <mark>shape-outside</mark> property. (letting content to wrap around the objects)
     <ul>
         <li>applied: team section => about me => first letter</li>
