@@ -21,16 +21,16 @@
 - Usage of **display:flow-root**
   - applied: team section => about me. Because the first letter of the text has **float:left** property
   - it enables the the container to **clear floats**
--Flipable card eseential properties
+- Flipable card eseential properties
   - applied: customer section
   - flipable card container(parent) must have  **perspective()** value
   - flipable card - must have **transform-style:preserve-3d**
   - flipable card front face - must have **backface-visibility:hidden**
   - flipable card back face - must have **backface-visibility:hidden**
--Usage of **em** unit
+- Usage of **em** unit
   - applied: team and customer section => each team member and customer
   - firefox has nice visualization for shape-outside property
--Some **web-accessibility** ideas
+- Some **web-accessibility** ideas
   - applied: tab-index, aria-required, aria-label, alerts for contact form
   - webaim.org
 
