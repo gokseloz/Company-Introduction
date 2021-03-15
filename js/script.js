@@ -52,7 +52,6 @@ const formSubmit = (e) => {
     }
 }
 
-
 inputEmail.addEventListener("invalid", (e) => {
     e.preventDefault()
     formWarning()
