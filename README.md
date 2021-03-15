@@ -12,7 +12,7 @@
 
 ## What did I learn from this project?
 
--Difference between children and childNodes, parentElement and parentNodes
+⋅⋅Difference between children and childNodes, parentElement and parentNodes
 <li>Nice effect by using **transform:scale()** and **transform-origin**
     <ul>
         <li>applied: team section => about me after clicking the button top-right</li>
