@@ -15,41 +15,24 @@
 * Difference between **children** and **childNodes**, **parentElement** and **parentNodes**
 - Nice effect by using **transform:scale()** and **transform-origin**
   - applied: team section => about me after clicking the button top-right
-
-
-<li>Css <mark>shape-outside</mark> property. (letting content to wrap around the objects)
-    <ul>
-        <li>applied: team section => about me => first letter</li>
-        <li>firefox has nice visualization for shape-outside property</li>
-    </ul>
-</li>
-<li>Usage of <mark>display:flow-root</mark>
-    <ul>
-        <li>applied: team section => about me. Because the first letter of the text has <mark>float:left</mark> property</li>
-        <li>it enables the the container to <mark>clear floats</mark></li>
-    </ul>
-</li>
-<li>Flipable card eseential properties
-    <ul>
-        <li>applied: customer section</li>
-        <li>flipable card container(parent) - must have  <mark>perspective()</mark> value</li>
-        <li>flipable card - must have <mark>transform-style:preserve-3d</mark></li>
-        <li>flipable card front face - must have <mark>backface-visibility:hidden</mark></li>
-        <li>flipable card back face - must have <mark>backface-visibility:hidden</mark></li>
-    </ul>   
-</li>
-<li>Usage of <mark>em</mark> unit
-    <ul>
-        <li>applied: team and customer section => each team member and customer</li>
-        <li>firefox has nice visualization for shape-outside property</li>
-    </ul>
-</li>Some <mark>web-accessibility</mark> ideas
-    <ul>
-        <li>applied: tab-index, aria-required, aria-label, alerts for contact form</li>
-        <li>webaim.org</li>
-    </ul>
-<li>
-
+- Css **shape-outside** property. (letting content to wrap around the objects)
+  -applied: team section => about me => first letter
+  -firefox has nice visualization for shape-outside property
+- Usage of **display:flow-root**
+  -applied: team section => about me. Because the first letter of the text has **float:left** property
+  -it enables the the container to **clear floats**
+-Flipable card eseential properties
+  -applied: customer section
+  -flipable card container(parent) must have  **perspective()** value
+  -flipable card - must have **transform-style:preserve-3d**
+  -flipable card front face - must have **backface-visibility:hidden**
+  -flipable card back face - must have **backface-visibility:hidden**
+-Usage of **em** unit
+  -applied: team and customer section => each team member and customer
+  -firefox has nice visualization for shape-outside property
+-Some **web-accessibility** ideas
+  -applied: tab-index, aria-required, aria-label, alerts for contact form
+  -webaim.org
 
 ## How did I do this?
 ### Technologies
