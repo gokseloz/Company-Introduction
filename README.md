@@ -29,7 +29,6 @@
   - flipable card back face - must have **backface-visibility:hidden**
 - Usage of **em** unit
   - applied: team and customer section => each team member and customer
-  - firefox has nice visualization for shape-outside property
 - Some **web-accessibility** ideas
   - applied: tab-index, aria-required, aria-label, alerts for contact form
   - webaim.org
