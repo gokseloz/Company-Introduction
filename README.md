@@ -34,7 +34,6 @@
 - For CSS: LESS preprocessor is applied. In order to compile LESS files to CSS, node-sass with npm is utilized
 - For JS: Vanilla JS is applied
 
-
 ### Responsivity
 - Fully Responsive
 
