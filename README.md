@@ -45,5 +45,5 @@
 
 
 ## Live demo
-- [href="https://company-introduction.vercel.app/" target="_blank">] See live demo
+- [See live demo](https://company-introduction.vercel.app)
 
