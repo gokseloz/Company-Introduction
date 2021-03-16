@@ -48,5 +48,5 @@
 
 ## Live demo
 <ul> 
-<li><a href="company-introduction-gokseloz.vercel.app" target="_blank">See live demo</a></li>
+<li><a href="https://company-introduction.vercel.app/" target="_blank">See live demo</a></li>
 </ul>
