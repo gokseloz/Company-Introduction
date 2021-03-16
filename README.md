@@ -7,7 +7,7 @@
 - I made this website in order to improve my HTML, CSS and JS skills
 
 ## What did I learn from this project?
-- Difference between **children** and **childNodes**, **parentElement** and **parentNodes**
+- Difference between **children** and **childNodes**
 - Usage of **namedItem**
 - Nice effect by using **transform:scale()** and **transform-origin**
   - applied: team section => about me after clicking the button top-right
