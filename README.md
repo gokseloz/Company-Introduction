@@ -37,7 +37,6 @@
 ### Responsivity
 - Fully Responsive
 
-
 ## Live demo
 - [See live demo](https://company-introduction.vercel.app)
 
