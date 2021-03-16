@@ -23,7 +23,7 @@
   - it enables the the container to **clear floats**
 - Flipable card eseential properties
   - applied: customer section
-  - flipable card container(parent) must have  **perspective()** value
+  - flipable card container(parent) - must have  **perspective()** value
   - flipable card - must have **transform-style:preserve-3d**
   - flipable card front face - must have **backface-visibility:hidden**
   - flipable card back face - must have **backface-visibility:hidden**
