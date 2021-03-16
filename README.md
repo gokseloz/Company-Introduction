@@ -35,18 +35,15 @@
 
 ## How did I do this?
 ### Technologies
-<ul>
-<li>HTML, CSS & JavaScript.</li>
-<li>For CSS: LESS preprocessor is applied. In order to compile LESS files to CSS, node-sass with npm is utilized.</li>
-<li>For JS: Vanilla JS is applied</li>
-</ul>
+- HTML, CSS & JavaScript
+- For CSS: LESS preprocessor is applied. In order to compile LESS files to CSS, node-sass with npm is utilized
+- For JS: Vanilla JS is applied
+
 
 ### Responsivity
-<ul>
-<li>Fully Responsive</li>
-</ul>
+- Fully Responsive
+
 
 ## Live demo
-<ul> 
-<li><a href="https://company-introduction.vercel.app/" target="_blank">See live demo</a></li>
-</ul>
+- [href="https://company-introduction.vercel.app/" target="_blank">] See live demo
+
