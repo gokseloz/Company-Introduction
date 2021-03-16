@@ -56,53 +56,6 @@ a, a:visited, a:hover {
       .heading-secondary {
         font-size: 5.5rem; } }
 
-.btn {
-  border: none;
-  cursor: pointer; }
-  .btn-turquoise {
-    width: 100%;
-    padding: .5em;
-    color: #fff;
-    font-size: .8rem;
-    letter-spacing: .1rem;
-    border-radius: 2rem;
-    background-color: rgba(50, 231, 255, 0.8);
-    transition: background-color .5s; }
-    .btn-turquoise:hover {
-      background-color: #32e7ff; }
-    @media (min-width: 650px) {
-      .btn-turquoise {
-        font-size: 1.2rem; } }
-  .btn-key {
-    position: absolute;
-    right: -.5rem;
-    top: -.5rem;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    background-color: #222;
-    transition: transform .5s;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .btn-key.active {
-      transform: rotate(405deg); }
-    .btn-key div {
-      width: 70%;
-      height: .1rem;
-      background-color: #fff; }
-  .btn-send {
-    width: 100%;
-    border-radius: 2rem;
-    color: #fff;
-    font-size: 1rem;
-    letter-spacing: .1rem;
-    background-color: #f08080;
-    padding: .7rem 0;
-    transition: background-color .5s; }
-    .btn-send:hover {
-      background-color: #f06060; }
-
 .section-wrapper {
   margin: 0 auto;
   width: 100%;
@@ -287,7 +240,7 @@ a, a:visited, a:hover {
             position: absolute;
             margin-top: .3rem; }
           .customers-testimonials .customer-card-wrapper .customer-review .customer-para {
-            font-size: .8em;
+            font-size: .75em;
             text-align: justify; }
           .customers-testimonials .customer-card-wrapper .customer-review .customer-stars {
             color: #f08e0f; }
@@ -529,3 +482,55 @@ a, a:visited, a:hover {
     @media (min-width: 1350px) {
       .scroll-up-btn i {
         font-size: 1rem; } }
+
+.btn-turquoise {
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  padding: .5em;
+  color: #fff;
+  font-size: .8rem;
+  letter-spacing: .1rem;
+  border-radius: 2rem;
+  background-color: rgba(50, 231, 255, 0.8);
+  transition: background-color .5s; }
+  .btn-turquoise:hover {
+    background-color: #32e7ff; }
+  @media (min-width: 650px) {
+    .btn-turquoise {
+      font-size: 1.13rem; } }
+
+.btn-key {
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: -.5rem;
+  top: -.5rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #222;
+  transition: transform .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .btn-key.active {
+    transform: rotate(405deg); }
+  .btn-key div {
+    width: 70%;
+    height: .1rem;
+    background-color: #fff; }
+
+.btn-send {
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 2rem;
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  background-color: #f08080;
+  padding: .7rem 0;
+  transition: background-color .5s; }
+  .btn-send:hover {
+    background-color: #f06060; }
