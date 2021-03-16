@@ -65,7 +65,7 @@ a, a:visited, a:hover {
   padding: 2rem; }
   @media (min-width: 1450px) {
     .section-wrapper {
-      width: 90%; } }
+      max-width: 1350px; } }
 
 .intro {
   position: relative;
