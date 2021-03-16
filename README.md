@@ -1,17 +1,12 @@
 ## Company-Introduction
-<ul>
-<li>A website made by following an online course</li>
-<li>Vast majority of the codes I implemented by myself.</li>
-<li>When I got stuck and could not find out any way to solve the problem, I took a look at the completed project's code or search online</li>
-</ul>
+- A website made by following an online course
+- Vast majority of the codes I implemented by myself
+- When I got stuck and could not find out any way to solve the problem, I took a look at the completed project's code or search online
 
 ## Why did I work on this project?
-<ul>
-<li>I made this website in order to improve my HTML, CSS and JS skills</li>
-</ul>
+- I made this website in order to improve my HTML, CSS and JS skills
 
 ## What did I learn from this project?
-
 * Difference between **children** and **childNodes**, **parentElement** and **parentNodes**
 - Nice effect by using **transform:scale()** and **transform-origin**
   - applied: team section => about me after clicking the button top-right
