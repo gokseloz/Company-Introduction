@@ -126,7 +126,7 @@ a, a:visited, a:hover {
     justify-content: space-around; }
     .intro-nav-link {
       width: .6rem;
-      color: #fff;
+      color: #3d3d3d;
       font-weight: 700;
       word-break: break-all;
       transition: width .5s;
@@ -298,7 +298,7 @@ a, a:visited, a:hover {
       .team-members .team-member-projects {
         font-size: .8em;
         letter-spacing: .07em;
-        color: #fff;
+        color: #3d3d3d;
         padding: .3em .8em;
         background-color: #fab34a;
         border-radius: 2rem; }
@@ -532,7 +532,7 @@ a, a:visited, a:hover {
   cursor: pointer;
   width: 100%;
   border-radius: 2rem;
-  color: #fff;
+  color: #222;
   font-size: 1rem;
   letter-spacing: .1rem;
   background-color: #f08080;
