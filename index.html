@@ -240,9 +240,12 @@
             <div class="contact-form-wrapper">
                 <img src="images/form-img.png" alt="letter" class="contact-img">
                 <form action="yeah" class="contact-form" tabindex="0" aria-label="contact form">
-                    <input type="text" placeholder="Your Name" class="inputs form-name" aria-required="true">
-                    <input type="email" placeholder="Your Email" class="inputs form-email"  aria-required="true">
-                    <textarea placeholder="Your Message" class="inputs form-textArea" aria-required="true"></textarea>
+                    <label for="yourName">Your Name</label>
+                    <input type="text" placeholder="Your Name" class="inputs form-name" id="yourName" aria-required="true">
+                    <label for="yourEmail">Your Email</label>
+                    <input type="email" placeholder="Your Email" class="inputs form-email" id="yourEmail"  aria-required="true">
+                    <label for="yourMessage">Your Message</label>
+                    <textarea placeholder="Your Message" class="inputs form-textArea" id="yourMessage" aria-required="true"></textarea>
                     <button type="submit" class="form-btn btn btn-send" >Send</button>
                     <p class="form-successText">Your message has successfully sent</p>
                     <p class="form-warningText" tabindex="0">Please type everything correctly</p>
