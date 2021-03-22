@@ -409,6 +409,12 @@ a, a:visited, a:hover {
         height: min-content; }
         .contact-form:hover {
           transform: translateY(-1rem) rotateY(-30deg); } }
+    .contact-form label {
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      z-index: -1000;
+      position: absolute; }
     .contact-form .form-name,
     .contact-form .form-email,
     .contact-form .form-textArea {

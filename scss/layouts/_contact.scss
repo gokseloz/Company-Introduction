@@ -87,6 +87,13 @@
                 transform: translateY(-1rem) rotateY(-30deg);
             }
         }
+        label{
+           width: 1px;
+           height: 1px;
+           overflow: hidden;
+           z-index: -1000;
+           position: absolute;
+        }
 
         .form-name,
         .form-email,
